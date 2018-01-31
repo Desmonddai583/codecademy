@@ -31,8 +31,8 @@
   $ docker rmi $(docker images -q)
 
 ## Access postgres:
-  $ docker exec -ti users-db psql -U postgres -W
-  $ \c users_dev
+  $ docker exec -ti users-db psql -U postgres -W \
+  $ \c users_dev \
   $ select * from users;
 
 # Microservices with Docker, Flask, and React
