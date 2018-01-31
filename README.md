@@ -34,3 +34,7 @@
   $ docker exec -ti users-db psql -U postgres -W
   # \c users_dev
   # select * from users;
+  
+# Microservices with Docker, Flask, and React
+
+[![Build Status](https://travis-ci.org/Desmonddai583/codecademy.svg?branch=master)](https://travis-ci.org/Desmonddai583/codecademy)
