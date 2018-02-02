@@ -7,4 +7,3 @@ def add_user(username, email, password):
     db.session.add(user)
     db.session.commit()
     return user
-

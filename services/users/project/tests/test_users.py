@@ -54,7 +54,10 @@ class TestUserService(BaseTestCase):
         with self.client:
             response = self.client.post(
                 '/users',
-                data=json.dumps({'email': 'michael@realpython.com', 'password': 'test'}),
+                data=json.dumps({
+                    'email': 'michael@realpython.com',
+                    'password': 'test'
+                }),
                 content_type='application/json',
             )
             data = json.loads(response.data.decode())
@@ -179,7 +182,11 @@ class TestUserService(BaseTestCase):
         with self.client:
             response = self.client.post(
                 '/',
-                data=dict(username='michael', email='michael@realpython.com', password='test'),
+                data=dict(
+                    username='michael',
+                    email='michael@realpython.com',
+                    password='test'
+                ),
                 follow_redirects=True
             )
             self.assertEqual(response.status_code, 200)
