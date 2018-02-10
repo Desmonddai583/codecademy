@@ -22,6 +22,14 @@
   $ docker-compose -f docker-compose-dev.yml \
     run users-service python manage.py cov
 
+## Client-side tests:
+  $ docker-compose -f docker-compose-dev.yml \
+    run client npm test
+
+## Format checker:
+  $ docker-compose -f docker-compose-dev.yml \
+    run users-service flake8 project
+
 ## To stop the containers:
   $ docker-compose -f docker-compose-dev.yml stop
 
