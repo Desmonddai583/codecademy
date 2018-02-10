@@ -18,6 +18,10 @@
   $ docker-compose -f docker-compose-dev.yml \
     run users-service python manage.py test
 
+## Test Coverage:
+  $ docker-compose -f docker-compose-dev.yml \
+    run users-service python manage.py cov
+
 ## To stop the containers:
   $ docker-compose -f docker-compose-dev.yml stop
 
