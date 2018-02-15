@@ -6,8 +6,9 @@ import UsersList from './components/UsersList';
 import AddUser from './components/AddUser';
 import About from './components/About';
 import NavBar from './components/NavBar';
-import Form from './components/Form.jsx';
-import Logout from './components/Logout.jsx';
+import Form from './components/Form';
+import Logout from './components/Logout';
+import UserStatus from './components/UserStatus';
 
 class App extends Component {
   constructor() {
@@ -147,6 +148,7 @@ class App extends Component {
                     isAuthenticated={this.state.isAuthenticated}
                   />
                 )} />
+                <Route exact path='/status' component={UserStatus}/>
               </Switch>
             </div>
           </div>
