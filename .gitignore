@@ -3,3 +3,4 @@ env
 htmlcov/
 jest_0/
 __snapshots__
+node_modules
